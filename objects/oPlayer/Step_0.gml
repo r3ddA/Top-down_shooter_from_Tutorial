@@ -5,7 +5,7 @@ downKey = keyboard_check(ord("S"));
 rightKey = keyboard_check(ord("D"));
 
 
-//player movement
+//player movement okeeeeeyyy
 #region playerMovement
 
 	//get the direction
