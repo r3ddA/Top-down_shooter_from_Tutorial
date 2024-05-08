@@ -19,3 +19,6 @@
 	sprite[1] = sPlayerUp;
 	sprite[2] = sPlayerLeft;
 	sprite[3] = sPlayerDown;
+	
+//weapon info
+	bulletObj = oBullet;

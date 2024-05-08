@@ -1,11 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"Object4",
+  "%Name":"oBullet",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Object4",
+  "name":"oBullet",
   "overriddenProperties":[],
   "parent":{
     "name":"Player",
