@@ -57,12 +57,21 @@ shootKey = mouse_check_button(mb_left);
 #endregion
 
 //spara, premi quel cazzo di grilletto
-if shootKey{
-	//crea il proiettile
-	var _bulletInst = instance_create_depth(x, centerY, depth-100, bulletObj);
+if shootTimer > 0 {shootTimer--;}
+
+if shootKey && shootTimer <=0{
+	//reset timer
+	shootTimer = shootCoolDown;
 	
-	//cambia la direzione
-	with(_bulletInst){
-		dir = other.aimDir;	
+	//shooting
+		//crea il proiettile
+		var _xOffset = lengthdir_x(weaponLenght + weaponOffsetDist - 9, aimDir);
+		var _yOffset = lengthdir_y(weaponLenght + weaponOffsetDist - 9, aimDir);
+		var _bulletInst = instance_create_depth(x + _xOffset, centerY + _yOffset, depth-100, bulletObj);
+
+		//cambia la direzione
+		with(_bulletInst){
+		dir = other.aimDir;
+		image_angle = other.aimDir;	
 	}
 }

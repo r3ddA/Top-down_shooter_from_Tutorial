@@ -20,5 +20,15 @@
 	sprite[2] = sPlayerLeft;
 	sprite[3] = sPlayerDown;
 	
-//weapon info
+//weapon
+	shootTimer = 0;
+	shootCoolDown = 15;
+	
 	bulletObj = oBullet;
+	
+	weapon = {
+		
+		sprite : sAK47,
+		lenght : sprite_get_bbox_right(sAK47) -sprite_get_xoffset(sAK47),
+		 
+	}

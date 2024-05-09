@@ -1,6 +1,5 @@
 //disegna l'arma del player ogni volta chiamata con i suoi rispettivi setting
 function draw_weapon(){
-	//disegna l'arma RAHHHHH
 	//distanzia l'arma dal centro del player
 	var _xOffset = lengthdir_x(weaponOffsetDist, aimDir);
 	var _yOffset = lengthdir_y(weaponOffsetDist, aimDir);
