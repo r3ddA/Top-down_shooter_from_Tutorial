@@ -44,8 +44,8 @@
   },
   "origin":9,
   "parent":{
-    "name":"Player",
-    "path":"folders/Player.yy",
+    "name":"AK47",
+    "path":"folders/Weapon/AK47.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

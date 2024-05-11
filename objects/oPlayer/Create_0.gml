@@ -22,13 +22,10 @@
 	
 //weapon
 	shootTimer = 0;
-	shootCoolDown = 15;
 	
-	bulletObj = oBullet;
-	
-	weapon = {
-		
-		sprite : sAK47,
-		lenght : sprite_get_bbox_right(sAK47) -sprite_get_xoffset(sAK47),
-		 
-	}
+	AK47 = new create_weapon(
+		sAK47, 
+		sprite_get_bbox_right(sAK47) - sprite_get_xoffset(sAK47),
+		oBullet, 12, 30, 3); 
+
+	weapon = AK47;

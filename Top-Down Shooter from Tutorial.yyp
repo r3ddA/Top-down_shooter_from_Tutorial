@@ -12,6 +12,8 @@
   "Folders":[
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Stanze","folderPath":"folders/Stanze.yy","name":"Stanze","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Weapon","folderPath":"folders/Weapon.yy","name":"Weapon","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"AK47","folderPath":"folders/Weapon/AK47.yy","name":"AK47","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[],
   "isEcma":false,
@@ -27,6 +29,7 @@
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"custom_functions","path":"scripts/custom_functions/custom_functions.yy",},},
+    {"id":{"name":"weaponCreation","path":"scripts/weaponCreation/weaponCreation.yy",},},
     {"id":{"name":"sAK47","path":"sprites/sAK47/sAK47.yy",},},
     {"id":{"name":"sBullet","path":"sprites/sBullet/sBullet.yy",},},
     {"id":{"name":"sPlayerDown","path":"sprites/sPlayerDown/sPlayerDown.yy",},},

@@ -61,17 +61,17 @@ if shootTimer > 0 {shootTimer--;}
 
 if shootKey && shootTimer <=0{
 	//reset timer
-	shootTimer = shootCoolDown;
+	shootTimer = weapon.coolDown;
 	
 	//shooting
 		//crea il proiettile
-		var _xOffset = lengthdir_x(weaponLenght + weaponOffsetDist - 9, aimDir);
-		var _yOffset = lengthdir_y(weaponLenght + weaponOffsetDist - 9, aimDir);
-		var _bulletInst = instance_create_depth(x + _xOffset, centerY + _yOffset, depth-100, bulletObj);
+		var _xOffset = lengthdir_x(weapon.lenght + weaponOffsetDist - 9, aimDir);
+		var _yOffset = lengthdir_y(weapon.lenght + weaponOffsetDist - 9, aimDir);
+		var _bulletInst = instance_create_depth(x + _xOffset, centerY + _yOffset, depth-100, weapon.bulletObj);
 
 		//cambia la direzione
 		with(_bulletInst){
-		dir = other.aimDir;
-		image_angle = other.aimDir;	
-	}
+			dir = other.aimDir;
+			image_angle = other.aimDir;	
+		}
 }
