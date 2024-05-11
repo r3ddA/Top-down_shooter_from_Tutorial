@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"oBulletPistola",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"oBulletPistola",
   "overriddenProperties":[],
@@ -9,7 +11,10 @@
     "name":"pistolaSilenziata",
     "path":"folders/Weapon/pistolaSilenziata.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oBullet",
+    "path":"objects/oBullet/oBullet.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -27,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sBulletPistola",
+    "path":"sprites/sBulletPistola/sBulletPistola.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

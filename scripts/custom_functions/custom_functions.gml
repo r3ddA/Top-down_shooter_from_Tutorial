@@ -6,8 +6,8 @@ function draw_weapon(){
 	
 
 	//flip the AK left and right
-	var _weaponYscl = 0.6;
-	if aimDir > 90 && aimDir <270 {_weaponYscl = -0.6;} 
+	var _weaponYscl = weapon.scale;
+	if aimDir > 90 && aimDir <270 {_weaponYscl = weapon.scale * -1;} 
 
-	draw_sprite_ext(sAK47, 0, x + _xOffset, centerY + _yOffset, 0.6, _weaponYscl, aimDir, c_white, 1);
+	draw_sprite_ext(weapon.sprite, 0, x + _xOffset, centerY + _yOffset, weapon.scale, _weaponYscl, aimDir, c_white, 1);
 }

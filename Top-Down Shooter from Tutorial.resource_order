@@ -2,8 +2,10 @@
   "FolderOrderSettings":[
     {"name":"Stanze","order":1,"path":"folders/Stanze.yy",},
     {"name":"Weapon","order":8,"path":"folders/Weapon.yy",},
-    {"name":"AK47","order":1,"path":"folders/Weapon/AK47.yy",},
-    {"name":"pistolaSilenziata","order":2,"path":"folders/Weapon/pistolaSilenziata.yy",},
+    {"name":"AWP","order":6,"path":"folders/Weapon/AWP.yy",},
+    {"name":"pistolaSilenziata","order":1,"path":"folders/Weapon/pistolaSilenziata.yy",},
+    {"name":"pompaDelNonno","order":4,"path":"folders/Weapon/pompaDelNonno.yy",},
+    {"name":"UZI","order":5,"path":"folders/Weapon/UZI.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"oBullet","order":2,"path":"objects/oBullet/oBullet.yy",},
@@ -12,7 +14,8 @@
     {"name":"oWall","order":3,"path":"objects/oWall/oWall.yy",},
     {"name":"custom_functions","order":6,"path":"scripts/custom_functions/custom_functions.yy",},
     {"name":"weaponCreation","order":7,"path":"scripts/weaponCreation/weaponCreation.yy",},
-    {"name":"sBullet","order":1,"path":"sprites/sBullet/sBullet.yy",},
+    {"name":"sAK47","order":1,"path":"sprites/sAK47/sAK47.yy",},
+    {"name":"sBullet","order":3,"path":"sprites/sBullet/sBullet.yy",},
     {"name":"sBulletPistola","order":1,"path":"sprites/sBulletPistola/sBulletPistola.yy",},
     {"name":"sPistolaSilenziata","order":3,"path":"sprites/sPistolaSilenziata/sPistolaSilenziata.yy",},
     {"name":"sPlayerDown","order":4,"path":"sprites/sPlayerDown/sPlayerDown.yy",},

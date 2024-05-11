@@ -26,6 +26,11 @@
 	AK47 = new create_weapon(
 		sAK47, 
 		sprite_get_bbox_right(sAK47) - sprite_get_xoffset(sAK47),
-		oBullet, 12, 30, 3); 
-
-	weapon = AK47;
+		oBullet, true, 12, 30, 3, 0.6, 9, 0.15); 
+	
+	pistolaSilenziata = new create_weapon(
+		sPistolaSilenziata,
+		sprite_get_bbox_right(sPistolaSilenziata) - sprite_get_xoffset(sPistolaSilenziata),
+		oBulletPistola, false, 0, 15, 1.5, 0.2, 35, 0.25);
+	
+	weapon = pistolaSilenziata;

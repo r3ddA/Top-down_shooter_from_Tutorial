@@ -9,8 +9,8 @@
   "name":"oBullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"AK47",
-    "path":"folders/Weapon/AK47.yy",
+    "name":"Weapon",
+    "path":"folders/Weapon.yy",
   },
   "parentObjectId":null,
   "persistent":false,

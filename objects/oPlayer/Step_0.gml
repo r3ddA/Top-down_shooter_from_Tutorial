@@ -38,7 +38,7 @@ shootKey = mouse_check_button(mb_left);
 #endregion
 
 
-#region spriteControl
+ #region spriteControl
 	//assicuriamoci che il bastardo stia guardando La direzione giusta (feat. neffa)
 		face = round(aimDir/90);
 		if face == 4 {face = 0;}
@@ -65,13 +65,15 @@ if shootKey && shootTimer <=0{
 	
 	//shooting
 		//crea il proiettile
-		var _xOffset = lengthdir_x(weapon.lenght + weaponOffsetDist - 9, aimDir);
-		var _yOffset = lengthdir_y(weapon.lenght + weaponOffsetDist - 9, aimDir);
+		var _xOffset = lengthdir_x(weapon.lenght + weaponOffsetDist - weapon.distance, aimDir);
+		var _yOffset = lengthdir_y(weapon.lenght + weaponOffsetDist - weapon.distance, aimDir);
 		var _bulletInst = instance_create_depth(x + _xOffset, centerY + _yOffset, depth-100, weapon.bulletObj);
 
 		//cambia la direzione
 		with(_bulletInst){
 			dir = other.aimDir;
-			image_angle = other.aimDir;	
+			image_angle = other.aimDir;
+			image_xscale = other.weapon.bulletScale;
+			image_yscale = other.weapon.bulletScale;
 		}
 }

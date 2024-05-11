@@ -1,6 +1,6 @@
 //Il proiettile madonna cessa
-image_xscale = 0.15;
-image_yscale = 0.15;
+image_xscale = 0;
+image_yscale = 0;
 image_angle = 0;
 
 dir = 0;
