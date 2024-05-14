@@ -1,4 +1,4 @@
-//gli imput porcodio (WASD)
+//move & shoot input (WASD)
 upKey = keyboard_check(ord("W"));
 leftKey = keyboard_check(ord("A"));
 downKey = keyboard_check(ord("S"));
@@ -6,14 +6,14 @@ rightKey = keyboard_check(ord("D"));
 shootKey = mouse_check_button(mb_left);
 
 
-//player movement okeeeeeyyy
+//player movement
 #region playerMovement
 
 	//get the direction
 		var _horizKey = rightKey - leftKey;
 		var _vertKey = downKey -upKey;
 	
-	moveDir = point_direction(0, 0, _horizKey, _vertKey); //calcola la merda di direzione tramite un grafico di un cerchio usando i gradi
+	moveDir = point_direction(0, 0, _horizKey, _vertKey); //uses the degree of a circle
 	
 	//get the x and y speeds
 		var _spd = 0;
@@ -24,22 +24,22 @@ shootKey = mouse_check_button(mb_left);
 	xSpd = lengthdir_x(_spd, moveDir);
 	ySpd = lengthdir_y(_spd, moveDir);
 	
-	//collisioni testa di merda
+	//collision
 		if place_meeting(x + xSpd, y, oWall) { xSpd = 0; }
 		if place_meeting(x, y + ySpd, oWall) { ySpd = 0; }
 	
 	
-	//muovi il cazzo i player
+	//move the player
 		x += xSpd;
 		y += ySpd;
 	
-	//depth (pensavo di essere profondo, mi chiamavo abisso)
+	//depth
 		depth = -bbox_bottom;
 #endregion
 
 
  #region spriteControl
-	//assicuriamoci che il bastardo stia guardando La direzione giusta (feat. neffa)
+	//get the player looking w the right sprite
 		face = round(aimDir/90);
 		if face == 4 {face = 0;}
 	
@@ -56,7 +56,7 @@ shootKey = mouse_check_button(mb_left);
 		aimDir = point_direction(x, centerY, mouse_x, mouse_y);
 #endregion
 
-//spara, premi quel cazzo di grilletto
+//shoot!
 if shootTimer > 0 {shootTimer--;}
 
 if shootKey && shootTimer <=0{
@@ -64,12 +64,12 @@ if shootKey && shootTimer <=0{
 	shootTimer = weapon.coolDown;
 	
 	//shooting
-		//crea il proiettile
+		//create the bullet
 		var _xOffset = lengthdir_x(weapon.lenght + weaponOffsetDist - weapon.distance, aimDir);
 		var _yOffset = lengthdir_y(weapon.lenght + weaponOffsetDist - weapon.distance, aimDir);
 		var _bulletInst = instance_create_depth(x + _xOffset, centerY + _yOffset, depth-100, weapon.bulletObj);
 
-		//cambia la direzione
+		//change the direction
 		with(_bulletInst){
 			dir = other.aimDir;
 			image_angle = other.aimDir;
