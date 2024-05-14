@@ -1,4 +1,3 @@
-/*KYS GAMER*/
 //Variables 4 movement
 
 	moveDir = 0;
@@ -7,7 +6,7 @@
 	xSpd = 0;
 	ySpd = 0;
 
-//controllo dello sprite porcaccio il gesù bambino
+//sprite information
 	centerYOffSet = -6;
 	centerY = y + centerYOffSet;
 
