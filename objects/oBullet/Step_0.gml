@@ -6,7 +6,7 @@
 	y += ySpd;
 
 //cleanup
-	//distruzione più totale
+	//destroy the bullet
 	if destroy == true{ 
 		//vfx
 		/*
