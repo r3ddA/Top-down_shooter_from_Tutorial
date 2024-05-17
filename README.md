@@ -15,7 +15,7 @@ But for now I will just have the base game, without a menu, boss, and lots of id
 
 ## Installation
 
-"Put the installation here"
+For now on you keed to download all the files of the last repository and open the project with GameMaker.
 
 
 ## Usage
