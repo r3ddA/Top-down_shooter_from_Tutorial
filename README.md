@@ -20,10 +20,11 @@ For now on you keed to download all the files of the last repository and open th
 
 ## Usage
 
-"put the usage here"
+You need to go to the top-left section on GameMaker after opening the project and click on Run.
+It will pop a window of Opera browser and you can play from it.
 
 ## Contributing
-I'm making this game using a playlist of tutorial from youtube called "How to make a Top-Down Shooter in Game Maker" (inserisci il link), so really a lot of code I'm using is written following the tutorial.
+I'm making this game using a playlist of tutorial from youtube called "How to make a Top-Down Shooter in Game Maker" (https://youtube.com/playlist?list=PL14Yj-e2sgzxTXIRYH-J2_PWAZRMahfLb&si=gdAjs74RT2wuPzqs), so really a lot of code I'm using is written following the tutorial.
 
 
 ## License
